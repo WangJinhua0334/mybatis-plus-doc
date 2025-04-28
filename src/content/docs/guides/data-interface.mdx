@@ -348,7 +348,7 @@ DELETE FROM user WHERE id IN (1, 2, 3)
 boolean update(Wrapper<T> updateWrapper);
 // 根据 whereWrapper 条件，更新记录
 boolean update(T updateEntity, Wrapper<T> whereWrapper);
-// 根据 ID 选择修改
+// 根据 ID 选择修改（entity 中必须含有 id 属性）
 boolean updateById(T entity);
 // 根据ID 批量更新
 boolean updateBatchById(Collection<T> entityList);
